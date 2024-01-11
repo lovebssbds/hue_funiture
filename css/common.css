@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* 웹폰트 연결 css */
+html,body{
+    background-color:white;
+    font-size:14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#333333;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color:#666666;
+}
+img{
+    vertical-align: middle;
+    
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+*{
+    padding:0; 
+    margin:0;
+    box-sizing:border-box;
+}
+header{
+    width: 100%;
+}
+.header-container{
+    width:100%;
+}
+.black-bar{
+    width:100%;
+    background: black;
+    color:white;
+}
+
+.fixed-header{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    width:10vw;
+    max-width: 200px;
+    height: 5vw;
+    max-height: 100px;
+    overflow: hidden;
+}
+h1 img{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fixed-header>div{
+    width:auto;
+}
+.fixed-header>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5px;
+}
+#search-input{
+    width:30vw;
+    max-width: 600px;
+    margin: 0 5px;
+}
+.nav-container{
+    width:100%;
+    max-width: 1280px;
+}
+.d-nav{
+    width:100%;
+    max-width: 1280px;
+    margin: auto;
+}
+.d-nav-select{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.d-nav-select>a{
+    display: block;
+    padding:0 5px;
+    height: 100%;
+    text-align: center;
+}
+.d-nav-select>a.underline{
+    border-bottom: 3px solid #333;
+}
+.d-links{
+    width:100%;
+    height: 10vw;
+    min-height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.d-links::-webkit-scrollbar{
+    height: 2px;
+}
+.d-links::-webkit-scrollbar-thumb{
+    background: #666;
+}
+.d-links::-webkit-scrollbar-track{
+    background: #aaa;    
+}
+.d-links > a{
+    display: block;
+    width:8vw;
+    height: 8vw;
+    min-width: 100px;
+    min-height: 120px;
+    padding:5px;
+}
+.d-links>a div{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-links>a div img{
+    width:100%;
+
+}
+.d-links>a p{
+    width:100%;
+    text-align: center;
+}
