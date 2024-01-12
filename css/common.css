@@ -72,11 +72,11 @@ h1 img{
     margin: 0 5px;
 }
 .nav-container{
-    width:100%;
+    width:90%;
     max-width: 1280px;
 }
 .d-nav{
-    width:100%;
+    width:90%;
     max-width: 1280px;
     margin: auto;
 }
@@ -96,22 +96,30 @@ h1 img{
 .d-nav-select>a.underline{
     border-bottom: 3px solid #333;
 }
-.d-links{
+.d-links-g{
     width:100%;
+    position:relative;
     height: 10vw;
     min-height: 130px;
-    display: flex;
-    justify-content: flex-start;
+}
+.d-links-g .contents{
+    width:100%;
+    height: 100%;
     overflow: auto;
 }
-.d-links::-webkit-scrollbar{
+.d-links-g .contents::-webkit-scrollbar{
     height: 2px;
 }
-.d-links::-webkit-scrollbar-thumb{
+.d-links-g .contents::-webkit-scrollbar-thumb{
     background: #666;
 }
-.d-links::-webkit-scrollbar-track{
+.d-links-g .contents::-webkit-scrollbar-track{
     background: #bbb;    
+}
+.d-links{
+    width:fit-content;
+    display: flex;
+    justify-content: flex-start;
 }
 .d-links > a{
     display: block;
@@ -137,7 +145,7 @@ h1 img{
 }
 
 .promotion-banners{
-    width:100%;
+    width:90%;
     max-width: 1280px;
     margin:auto;
 }
@@ -202,21 +210,25 @@ h1 img{
 }
 
 .best-category{
-    width:100%;
+    width:90%;
     max-width: 1280px;
     margin:auto;
 }
 .snap-slide-g{
     width:100%;
+    position:relative;
+}
+.snap-slide-g .contents{
+    width:100%;
     overflow: auto;
 }
-.snap-slide-g::-webkit-scrollbar{
+.snap-slide-g .contents::-webkit-scrollbar{
     height: 2px;
 }
-.snap-slide-g::-webkit-scrollbar-thumb{
+.snap-slide-g .contents::-webkit-scrollbar-thumb{
     background: #666;
 }
-.snap-slide-g::-webkit-scrollbar-track{
+.snap-slide-g .contents::-webkit-scrollbar-track{
     background: #bbb;
 }
 .snap-slide-g .slides{
@@ -242,11 +254,46 @@ h1 img{
     border-radius: 30px;
     padding:10px 30px;
 }
+.prevbt,
+.nextbt{
+    width:40px;
+    height: 40px;
+    background:#333;
+    position:absolute;
+    top:50%;
+    left:1rem;
+    transform: translateY(-50%);
+    color:white;
+    font-size: 22.5px; 
+    border-radius: 40px;
+    transition:opacity 200ms, visibility 200ms;
+    visibility: hidden;
+}
+.prevbt:hover,
+.nextbt:hover{
+    opacity: 0.85;
+}
+.nextbt{
+    left:auto;
+    right: 1rem;
+}
+.d-links-prev,
+.d-links-next{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
 
 
 @media(min-width:37.5em){
     .grid{
         grid-gap:1rem;
+    }
+    .prevbt{
+        left:-1.25rem;
+    }
+    .nextbt{
+        right: -1.25rem;
     }
 }
 @media(min-width:56.25em){
