@@ -111,7 +111,7 @@ h1 img{
     background: #666;
 }
 .d-links::-webkit-scrollbar-track{
-    background: #aaa;    
+    background: #bbb;    
 }
 .d-links > a{
     display: block;
@@ -200,6 +200,49 @@ h1 img{
 .pointer{
     display: none;
 }
+
+.best-category{
+    width:100%;
+    max-width: 1280px;
+    margin:auto;
+}
+.snap-slide-g{
+    width:100%;
+    overflow: auto;
+}
+.snap-slide-g::-webkit-scrollbar{
+    height: 2px;
+}
+.snap-slide-g::-webkit-scrollbar-thumb{
+    background: #666;
+}
+.snap-slide-g::-webkit-scrollbar-track{
+    background: #bbb;
+}
+.snap-slide-g .slides{
+    width:fit-content;
+    display: flex;
+}
+.snap-slide-g .slides .slide{
+    display: block;
+    width:300px;
+    margin:10px;
+    overflow: hidden;
+    position:relative;
+}
+.snap-slide-g .slides .slide img{
+    width:100%;
+}
+.snap-slide-g .slides .slide p{
+    position:absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 30px;
+    padding:10px 30px;
+}
+
 
 @media(min-width:37.5em){
     .grid{
