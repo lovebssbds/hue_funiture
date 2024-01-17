@@ -49,6 +49,7 @@ h1{
     height: 5vw;
     max-height: 100px;
     overflow: hidden;
+    padding:10px 0;
 }
 h1 img{
     width:100%;
@@ -106,6 +107,7 @@ h1 img{
     width:100%;
     height: 100%;
     overflow: auto;
+    position:relative;
 }
 .d-links-g .contents::-webkit-scrollbar{
     height: 2px;
